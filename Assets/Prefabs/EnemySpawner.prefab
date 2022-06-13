@@ -1,0 +1,713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5797416259704110503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8552994837378512113}
+  - component: {fileID: 6001126971574749028}
+  m_Layer: 0
+  m_Name: EnemyContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8552994837378512113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797416259704110503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7835079682834799525}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6001126971574749028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797416259704110503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8caef068532a2bf4db6d80b0fa8f129a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+--- !u!1 &7835079682834799579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7835079682834799525}
+  - component: {fileID: 8853785411994765769}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7835079682834799525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835079682834799579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8552994837378512113}
+  - {fileID: 933936435102583570}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8853785411994765769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835079682834799579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe69daf23a9d8b5428da59c3734078df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  parent: {fileID: 0}
+  cameraOffsetTospawn: 50
+  batSpecial: {fileID: 4350047785233183155, guid: da33aa075b8a9a541af19dbf6bdda209, type: 3}
+  bossSpawner: {fileID: 2723912039802793431}
+  lantern: {fileID: 6551967858820962320, guid: 62e452b39ed1324469118d8963165b24, type: 3}
+  bosStepSpawn: 300
+  spawnerSettings:
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 15
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 1
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+  - minDelay: 0.5
+    maxDelay: 2
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  - minDelay: 0.5
+    maxDelay: 1
+    lanternsCount: 10
+    enemiesPrefabs:
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 474a72478a007814883f6d810226988e, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 0957ba4d78bc2774bb1a6f75780f12eb, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 5a587df63b59ffd40b85da86ce8e86a8, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c3624f43b510b8044b0a11afd986964f, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 022426bc231640745a7ba55eb7926bb3, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: c7fcd6fba78831f42ba3af7eb2e171c6, type: 3}
+    - _weight: 5
+      _item: {fileID: 4350047785233183155, guid: 682692c55bf63f14baa25cc1dde2b27d, type: 3}
+  minutsCounter: 0
+--- !u!1001 &3098731383339244826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7835079682834799525}
+    m_Modifications:
+    - target: {fileID: 385344988942993069, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_Name
+      value: BossSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+--- !u!4 &933936435102583570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2879741878744372744, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+  m_PrefabInstance: {fileID: 3098731383339244826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2723912039802793431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1066684982372643021, guid: e7d53f02ea84e6c40bb3cf8abdb5e6af, type: 3}
+  m_PrefabInstance: {fileID: 3098731383339244826}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca91f7814cf48142a82ff11e273bfd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

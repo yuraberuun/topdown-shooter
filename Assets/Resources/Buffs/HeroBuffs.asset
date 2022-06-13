@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efc2b995dabc514ea618791b06dba03, type: 3}
+  m_Name: HeroBuffs
+  m_EditorClassIdentifier: 
+  _shopMaxHPBuff:
+  - 0.1
+  - 0.2
+  - 0.3
+  _battleMaxHPBuff:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  _shopSpeedBuff:
+  - 0.05
+  - 0.1
+  _battleSpeedBuff:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  _shopMagnetBuff:
+  - 0.25
+  - 0.5
+  _battleMagnetBuff:
+  - 0.33
+  - 0.66
+  - 1
+  - 1.33
+  - 1.66
+  _shopLuckyBuff:
+  - 0.1
+  - 0.2
+  - 0.3
+  _battleLuckyBuff:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  _shopGrowthBuff:
+  - 0.025
+  - 0.05
+  - 0.075
+  - 0.1
+  _battleGrowthBuff:
+  - 0.7
+  - 0.14
+  - 0.21
+  - 0.28
+  - 0.35
+  _shopArmorBuff: 010000000200000003000000
+  _battleArmorBuff: 0100000002000000030000000400000005000000

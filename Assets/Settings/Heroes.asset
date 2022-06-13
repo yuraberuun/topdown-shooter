@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9470abc64507794689997b98cb50f50, type: 3}
+  m_Name: Heroes
+  m_EditorClassIdentifier: 
+  heroes:
+  - name: Recruit
+    sprite: {fileID: 21300000, guid: cf46d77e2136f934090858dc10fe04e5, type: 3}
+    heroWeaponSprite: {fileID: 21300000, guid: f8dceaebdb75a8b41a9d3c5e8c14cdf9, type: 3}
+    heroWeaponName: Sword
+    description: 'An early recruit, signed up to fight the Grinning Cult. The recruit,
+      a noobie at heart is forced to prove his confidence and loyalty at the front
+      lines. In the meanwhile, exploring deep within which Atlas class he shall choose. '
+    addition: 'Gains 10% weapon damage every 10 levels (Max 30%)   '
+    playerPrefsName: Recruit
+    achPlayerPrefsName: 
+    open: 1
+    costs: 00000000
+    upgradeLevel: 1
+    upgradeLevelMax: 1
+  - name: Siege
+    sprite: {fileID: 21300000, guid: 0dbbb3d122016ec4cac6c395655a93f9, type: 3}
+    heroWeaponSprite: {fileID: 21300000, guid: 8d670fe851a46754692724535a5867be, type: 3}
+    heroWeaponName: Honeycomb
+    description: 'The Siege, most notable for his ability to stand his ground. As
+      a result of blocking, his boredom is often relinquished with greed. Days he
+      spends, looking for shiny objects as his spoils of war.   '
+    addition: 'Pick-up radius increases 25% per 10 levels (max 50%) '
+    playerPrefsName: Siege
+    achPlayerPrefsName: 
+    open: 1
+    costs: c8000000
+    upgradeLevel: 0
+    upgradeLevelMax: 1
+  - name: Spellcaster
+    sprite: {fileID: 21300000, guid: 4f8f263241b25c54e9afbd1355b182d2, type: 3}
+    heroWeaponSprite: {fileID: 21300000, guid: c9d0b6e31e3bbc14f9350db864cf06ac, type: 3}
+    heroWeaponName: Magic Wand
+    description: 'The Spellcaster, a class of arcanic ability with the potential
+      of malevolent destruction. A student of learning, this class is adept in thought
+      and learns quickly how to engage in combat. '
+    addition: 'Gains 10% more experience per 5 levels (Max 30%) '
+    playerPrefsName: Spellcaster
+    achPlayerPrefsName: 
+    open: 1
+    costs: 90010000
+    upgradeLevel: 0
+    upgradeLevelMax: 1
+  - name: Assasin
+    sprite: {fileID: 21300000, guid: d09256f325361b7439e3bb34e96394db, type: 3}
+    heroWeaponSprite: {fileID: 21300000, guid: 5da5172ff5f466643a3f3f2190565919, type: 3}
+    heroWeaponName: Knife
+    description: Crafty with his resources, the assassin is a deadly threat. A class
+      of dexterity and intelligence. Make sure to never underestimate the speed of
+      the assassin nor his second strike!
+    addition: 'Permanent +1 projectiles (All weapons)  '
+    playerPrefsName: Assasin
+    achPlayerPrefsName: AssasinHide
+    open: 1
+    costs: 2c010000
+    upgradeLevel: -1
+    upgradeLevelMax: 1
+  - name: Fighter
+    sprite: {fileID: 21300000, guid: ab54bbbf22ea9dc4c82c673fb0b3e136, type: 3}
+    heroWeaponSprite: {fileID: 21300000, guid: f8dceaebdb75a8b41a9d3c5e8c14cdf9, type: 3}
+    heroWeaponName: Sword
+    description: 'The Fighter, no knowledge or amount of wit can withstand the rage
+      of the Fighter. The Fighter, solely focuses on bloodcurdling attacks, leaving
+      foes and enemies begging for mercy. Relentless attacks.   '
+    addition: 'Gains 10% weapon damage every 10 levels (Max 30%)    '
+    playerPrefsName: Fighter
+    achPlayerPrefsName: FighterHide
+    open: 1
+    costs: f4010000
+    upgradeLevel: -1
+    upgradeLevelMax: 1

@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c895b9cac09d63f4687ba8557ac9b588, type: 3}
+  m_Name: UpgradeList
+  m_EditorClassIdentifier: 
+  weapons:
+  - name: Axe
+    sprite: {fileID: 21300000, guid: 0866fe6ac74598440933207a9de16321, type: 3}
+    description:
+    - High damage, falling projectiles. Can pass through enemies.
+    - +1 Axe
+    - +20 Damage
+    - +2 Enemy passes
+    - +1 Axe
+    - +20 Damage
+    - +2 Enemy passes
+    - +20 Damage
+    - Axe8
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 2
+    upgradeLevelMax: 8
+    type: 1
+  - name: Holy Bible
+    sprite: {fileID: 21300000, guid: c485a6298397fb344bc980e62c3188b8, type: 3}
+    description:
+    - 'Circulates to protect against evil '
+    - +1 Book
+    - +30% Speed
+    - +25% Area
+    - +10 Damage, +0.5s Duration , +1 Book
+    - +30% Speed, +25% Area
+    - +10 Damage, +0.5s Duration
+    - +1 Book
+    - Bible
+    playerPrefsName: 
+    achPlayerPrefsName: openBible
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Bone
+    sprite: {fileID: 21300000, guid: b64224ca52ab85e44aff445049973f9c, type: 3}
+    description:
+    - 'Bounces from enemy to enemy dealing damage  '
+    - +0.2s Duration, +20% Area
+    - '+20 Damage, +1 Bone '
+    - +50% Speed +20% Area
+    - '+20 Damage, +1 Bone '
+    - +0.2s Duration,
+    - '+20 Damage, +1 Bone '
+    - +50% Speed , +0.2s Duration
+    - Bone
+    playerPrefsName: 
+    achPlayerPrefsName: openBone
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Boomerang
+    sprite: {fileID: 21300000, guid: 2fda36dd2cbb5cf408be4cb9db85bfc1, type: 3}
+    description:
+    - 'Thrown at the closest enemy then gets loops in the opposite direction. '
+    - +10 Damage
+    - +25% Speed, +10% Area
+    - +1 Boomerang
+    - +10 Damage
+    - +25% Speed, +10% Area
+    - +1 Boomerang
+    - +10 Damage
+    - Boomerang
+    playerPrefsName: 
+    achPlayerPrefsName: openBoomerang
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Fireball Wand
+    sprite: {fileID: 21300000, guid: 3b5ae15c98fff22488e21699e1e5025e, type: 3}
+    description:
+    - 'assive Damage Fireballs '
+    - +10 Damage
+    - +10 Damage, +20% Speed
+    - +10 Damage
+    - +10 Damage, +20% Speed
+    - +10 Damage
+    - +10 Damage, +20% Speed
+    - +10 Damage
+    - Fireball
+    playerPrefsName: 
+    achPlayerPrefsName: openFireball
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Honeycomb
+    sprite: {fileID: 21300000, guid: 8d670fe851a46754692724535a5867be, type: 3}
+    description:
+    - Sweet nectar from the gods providing a defensive aura
+    - +2 Damage, +40% Area
+    - +1 Damage, -0.1s Cooldown
+    - +1 Damage, +20% Area
+    - +2 Damage, -0.1s Cooldown
+    - +1 Damage, +20% Area
+    - +1 Damage, -0.1s Cooldown
+    - +2 Damage, +20% Area
+    - Honeycomb
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 1
+    upgradeLevelMax: 8
+    type: 1
+  - name: Knife
+    sprite: {fileID: 21300000, guid: 5da5172ff5f466643a3f3f2190565919, type: 3}
+    description:
+    - 'Projectile thrown in the direction of movement '
+    - +1 Knife
+    - +5 Damage, +1 Knife
+    - +1 Knife
+    - +1 Knife
+    - +1 Knife
+    - +5 Damage
+    - +1 Knife
+    - Knife
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 1
+    upgradeLevelMax: 8
+    type: 1
+  - name: Magic Wand
+    sprite: {fileID: 21300000, guid: c9d0b6e31e3bbc14f9350db864cf06ac, type: 3}
+    description:
+    - 'Magic damage spell casted at the nearest enemy  '
+    - +1 Project tile
+    - '-0.2s Cooldown, '
+    - +1 Project tile
+    - +10 Damage
+    - +1 Project tile
+    - +1 Project tile
+    - +10 Damage
+    - Magic
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Shield
+    sprite: {fileID: 21300000, guid: 508fe3b5a2b7b3b46888fd6dc7b58d9b, type: 3}
+    description:
+    - Temporary Shield against enemy attacks
+    - -0.5s Cooldown
+    - -0.5s Cooldown
+    - +1 Shield
+    - -0.5s Cooldown
+    - -0.5s Cooldown
+    - +1 Shield
+    - -1s Cooldown
+    - Shield
+    playerPrefsName: 
+    achPlayerPrefsName: openShield
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Star
+    sprite: {fileID: 21300000, guid: fd52cf9690c58a84e8a7ab6b6b1c92c5, type: 3}
+    description:
+    - Reflects from the frame of the screen.
+    - +5 Damage, +30% Speed
+    - +0.3s Duration, +5 Damage
+    - +1 Project tile
+    - +5 Damage, +30% Speed
+    - +0.3s Duration, +5 Damage
+    - +1 Project tile
+    - +5 Damage, +30% Speed
+    - Star
+    playerPrefsName: 
+    achPlayerPrefsName: openStar
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Sword
+    sprite: {fileID: 21300000, guid: f8dceaebdb75a8b41a9d3c5e8c14cdf9, type: 3}
+    description:
+    - 'Swings Horizontally at the direction of movement '
+    - +1 Project tile
+    - +5 Damage
+    - +5 Damage, +10% Area
+    - +5 Damage
+    - +5 Damage, +10% Area
+    - +5 Damage
+    - +5 Damage
+    - Sword
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 3
+    upgradeLevelMax: 8
+    type: 1
+  - name: Holy Water
+    sprite: {fileID: 21300000, guid: 7bce2e4d90d4f034f843a60d265ccb49, type: 3}
+    description:
+    - Random Areas afflicting damage to enemies for a short period of time
+    - +20% Area, +1 Project Tile
+    - +10 Damage, +0.5s Duration
+    - +20% Area, +1 Project Tile
+    - +10 Damage, +0.3s Duration
+    - +20% Area, +1 Project Tile
+    - +5 Damage, +0.2s Duration
+    - +5 Damage, +20% Area
+    - Holy Water
+    playerPrefsName: 
+    achPlayerPrefsName: openHolyWater
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Lightning
+    sprite: {fileID: 21300000, guid: 1d555b886fe5d894da2282001571d53c, type: 3}
+    description:
+    - 'Random lightning strikes dealing damage to enemies '
+    - +1 Project tile
+    - +10 Damage, +100% Area
+    - +1 Project tile
+    - +20 Damage, +100% Area
+    - +1 Project tile
+    - +20 Damage, +100% Area
+    - +1 Project tile
+    - Lightning
+    playerPrefsName: 
+    achPlayerPrefsName: openLightning
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  - name: Freeze Shot
+    sprite: {fileID: 21300000, guid: 4f603136554ec9343b4d2707a973bfdb, type: 3}
+    description:
+    - Releases an ice ray.
+    - +0.5s Duration
+    - -0.5s Cooldown
+    - +0.5s Duration
+    - +0.5s Duration
+    - -0.5s Cooldown
+    - +0.5s Duration
+    - +0.5s Duration
+    - Freeze Shot
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 8
+    type: 1
+  buffs:
+  - name: XP buff
+    sprite: {fileID: 21300000, guid: 0dddb6893f25d394da9cb3d9b72354a0, type: 3}
+    description:
+    - XP buff
+    - XP buff
+    - XP buff
+    - XP buff
+    - XP buff
+    - XP buff
+    playerPrefsName: BattleHeroGrowth
+    achPlayerPrefsName: openMegaBrain
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+    type: 2
+  - name: Bullets Up
+    sprite: {fileID: 21300000, guid: ba1c581d2dc658a44bd3934445d97cec, type: 3}
+    description:
+    - Bullets becomes more.
+    - +1 Project tile
+    - +1 Project tile
+    - +1 Project tile
+    - +1 Project tile
+    - Bullets Up
+    playerPrefsName: BattleWeaponBulletCount
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+    type: 2
+  - name: Armor
+    sprite: {fileID: 21300000, guid: bf43ea7b101124049b4eed719832aeb3, type: 3}
+    description:
+    - 'Decreases damages received from enemy attacks '
+    - -1 damage
+    - -1 damage
+    - -1 damage
+    playerPrefsName: BattleHeroArmor
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 2
+    upgradeLevelMax: 3
+    type: 2
+  - name: Bullet Speed
+    sprite: {fileID: 21300000, guid: 28ac85bd883c1ae48b7ca18341cc12ec, type: 3}
+    description:
+    - ' Increases the speed of projectiles '
+    - ' Increases the speed of projectiles '
+    - ' Increases the speed of projectiles '
+    - ' Increases the speed of projectiles '
+    playerPrefsName: BattleWeaponSpeed
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 4
+    type: 2
+  - name: Weapon Cooldown
+    sprite: {fileID: 21300000, guid: 38e0aa169c670a9439ce02f9de325885, type: 3}
+    description:
+    - Reduse weapon cooldown.
+    - -0.08s Cooldown
+    - -0.08s Cooldown
+    - -0.08s Cooldown
+    - -0.08s Cooldown
+    - Weapon Cooldomn
+    playerPrefsName: BattleWeaponCooldown
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 3
+    type: 2
+  - name: Weapons Damage
+    sprite: {fileID: 21300000, guid: f9aa5fe43d47e8b4db5ac99b4fcc8316, type: 3}
+    description:
+    - Raises inflicted damage.
+    - +10% Damage
+    - +10% Damage
+    - +10% Damage
+    - +10% Damage
+    - + Weapons Damage
+    playerPrefsName: BattleWeaponDamage
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 1
+    upgradeLevelMax: 5
+    type: 2
+  - name: Luck Up
+    sprite: {fileID: 21300000, guid: a0ea43e5b3753ea4a83523888c01557a, type: 3}
+    description:
+    - 'Increase the chance of more items  '
+    - +10% Luck
+    - +10% Luck
+    - Luck Up
+    playerPrefsName: BattleHeroLucky
+    achPlayerPrefsName: FindClover
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 3
+    type: 2
+  - name: Magnet Zone
+    sprite: {fileID: 21300000, guid: ddba7543bdd99e846906f173850e0304, type: 3}
+    description:
+    - Hero pickups items from further away.
+    - +33% Picking drop zone
+    - +33% Picking drop zone
+    - +33% Picking drop zone
+    - +33% Picking drop zone
+    - Magnet Zone
+    playerPrefsName: BattleHeroMagnet
+    achPlayerPrefsName: FindMagnet
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+    type: 2
+  - name: Attack Range
+    sprite: {fileID: 21300000, guid: 26f695ff4bb17ac4b942784975ebf950, type: 3}
+    description:
+    - Augments area of attacks.
+    - +10% Area
+    - +10% Area
+    - +10% Area
+    - +10% Area
+    - Attack Range
+    playerPrefsName: BattleWeaponArea
+    achPlayerPrefsName: openRange
+    isOpen: 1
+    upgradeLevel: 4
+    upgradeLevelMax: 5
+    type: 2
+  - name: Movement Speed
+    sprite: {fileID: 21300000, guid: f8faeffdf7fc61f4a9ebf24ac3c6ce49, type: 3}
+    description:
+    - 'Increased Movement Speed '
+    - +10% Speed
+    - +10% Speed
+    - +10% Speed
+    - +10% Speed
+    - Movement Speed
+    playerPrefsName: BattleHeroSpeed
+    achPlayerPrefsName: openSpeed
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+    type: 2
+  - name: Max HP
+    sprite: {fileID: 21300000, guid: 8583271710e05774d8e3e54d5d9f89c8, type: 3}
+    description:
+    - Increased hero max HP.
+    - +10% Max HP
+    - +10% Max HP
+    - +10% Max HP
+    - +10% Max HP
+    - Max HP
+    playerPrefsName: BattleHeroMaxHP
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 1
+    upgradeLevelMax: 5
+    type: 2
+  - name: Weapon Effect
+    sprite: {fileID: 21300000, guid: 15c2fc5129ba5ff49a5664fda8809ed4, type: 3}
+    description:
+    - 'Increases duration of weapon effects. '
+    - +10% Duration
+    - +10% Duration
+    - +10% Duration
+    - +10% Duration
+    - Weapon Effect
+    playerPrefsName: BattleWeaponDuration
+    achPlayerPrefsName: openWeaponDuration
+    isOpen: 0
+    upgradeLevel: 0
+    upgradeLevelMax: 3
+    type: 2
+  HPItem:
+    name: HP
+    sprite: {fileID: 21300000, guid: 9dd09e27be65cd24a9e4f865412eba49, type: 3}
+    description:
+    - Get 30 HP
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+    type: 3
+  moneyItem:
+    name: Get 25 money
+    sprite: {fileID: 21300000, guid: ffa5cc37188322f4e80ffff92206f686, type: 3}
+    description:
+    - Get 25 money
+    playerPrefsName: 
+    achPlayerPrefsName: 
+    isOpen: 1
+    upgradeLevel: 0
+    upgradeLevelMax: -1
+    type: 4

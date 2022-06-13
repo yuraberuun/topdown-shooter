@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bfe13283b14ff40aacbbda3716c2f2, type: 3}
+  m_Name: Axe
+  m_EditorClassIdentifier: 
+  _levelsData:
+  - _minDamage: 15
+    _maxDamage: 25
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 1
+    _spawnOffset: 0.1
+    _passesThroughtEnemy: 1
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 15
+    _maxDamage: 25
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 1
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 35
+    _maxDamage: 45
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 1
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 35
+    _maxDamage: 45
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 3
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 35
+    _maxDamage: 45
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 3
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 55
+    _maxDamage: 65
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 3
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 55
+    _maxDamage: 65
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 5
+    _delayBetweenShots: 0.15
+    _freezeTime: 0
+  - _minDamage: 75
+    _maxDamage: 85
+    _hitForce: 10
+    _cooldown: 4
+    _speed: 625
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.2
+    _passesThroughtEnemy: 5
+    _delayBetweenShots: 0.15
+    _freezeTime: 0

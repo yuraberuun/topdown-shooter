@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/Bullets/HolyWaterController.cs.meta
+guid: 6e066af6a7d52d34b8293b9dec2f689c
+=======
+guid: a348813f43f2ea246923a790d5a4f777
+>>>>>>> yura:Assets/Scripts/Bullets/BoneBulletController.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

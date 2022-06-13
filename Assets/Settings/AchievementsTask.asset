@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635ad4bd87ba70d4a895aa9d31991f7a, type: 3}
+  m_Name: AchievementsTask
+  m_EditorClassIdentifier: 
+  killedEnemiesAch:
+  - killEnemies: 5000
+    achPlayerPrefsName: openStar
+    isTotal: 1
+  reachedLevelsAch:
+  - heroName: Total
+    reachedLevel: 5
+    achPlayerPrefsName: openSpeed
+    isTotal: 1
+  - heroName: Total
+    reachedLevel: 10
+    achPlayerPrefsName: openMegaBrain
+    isTotal: 1
+  - heroName: Total
+    reachedLevel: 25
+    achPlayerPrefsName: openRange
+    isTotal: 1
+  - heroName: Total
+    reachedLevel: 30
+    achPlayerPrefsName: openWeaponDuration
+    isTotal: 1
+  upgradeWeaponsAch:
+  - weaponName: Sword
+    achPlayerPrefsName: FighterHide
+  - weaponName: Knife
+    achPlayerPrefsName: AssasinHide
+  liveTimesAch:
+  - heroName: Total
+    time: 300
+    achPlayerPrefsName: openHolyWater
+    isTotal: 1
+  - heroName: Total
+    time: 900
+    achPlayerPrefsName: openBible
+    isTotal: 1
+  - heroName: Total
+    time: 1200
+    achPlayerPrefsName: openBone
+    isTotal: 1
+  - heroName: Assasin
+    time: 1200
+    achPlayerPrefsName: openBoomerang
+    isTotal: 0
+  - heroName: Siege
+    time: 600
+    achPlayerPrefsName: openLightning
+    isTotal: 0
+  - heroName: Spellcaster
+    time: 600
+    achPlayerPrefsName: openShield
+    isTotal: 0
+  - heroName: Spellcaster
+    time: 900
+    achPlayerPrefsName: openFireball
+    isTotal: 0
+  takeBonusAch: []
+  openItems:
+  - itemName: Axe
+    achPlayerPrefsName: AxeCollection
+  - itemName: Bible
+    achPlayerPrefsName: BibleCollection
+  - itemName: Bone
+    achPlayerPrefsName: BoneCollection
+  - itemName: Boomerang
+    achPlayerPrefsName: BoomerangCollection
+  - itemName: Fireball
+    achPlayerPrefsName: FireballCollection
+  - itemName: Freeze Shot
+    achPlayerPrefsName: FreezeCollection
+  - itemName: Knife
+    achPlayerPrefsName: KnifeCollection
+  - itemName: Honeycomb
+    achPlayerPrefsName: HoneyCollection
+  - itemName: Lightning
+    achPlayerPrefsName: LightningCollection
+  - itemName: Magic
+    achPlayerPrefsName: MagicCollection
+  - itemName: Shield
+    achPlayerPrefsName: ShieldCollection
+  - itemName: Star
+    achPlayerPrefsName: StarCollection
+  - itemName: Sword
+    achPlayerPrefsName: SwordCollection
+  - itemName: Holy Water
+    achPlayerPrefsName: WaterCollection
+  - itemName: Armor
+    achPlayerPrefsName: ArmorCollection
+  - itemName: Bullet Speed
+    achPlayerPrefsName: BulletSpeedCollection
+  - itemName: Bullets Up
+    achPlayerPrefsName: DuplicatorCollection
+  - itemName: Weapon Cooldomn
+    achPlayerPrefsName: ClockCollection
+  - itemName: Weapons Damage
+    achPlayerPrefsName: DamageCollection
+  - itemName: Weapon Effect
+    achPlayerPrefsName: LightTomeCollection
+  - itemName: Luck Up
+    achPlayerPrefsName: CloverCollection
+  - itemName: Magnet Zone
+    achPlayerPrefsName: GloveCollection
+  - itemName: Attack Range
+    achPlayerPrefsName: RangeCollection
+  - itemName: Movement Speed
+    achPlayerPrefsName: BootsCollection
+  - itemName: Max HP
+    achPlayerPrefsName: LifeCollection
+  - itemName: XP buff
+    achPlayerPrefsName: BrainCollection
+  - itemName: HP
+    achPlayerPrefsName: FindHP
+  - itemName: Luck_Up
+    achPlayerPrefsName: FindClover
+  - itemName: Death
+    achPlayerPrefsName: FindKillAll
+  - itemName: XP_Magnet
+    achPlayerPrefsName: FindMagnet
+  - itemName: Freeze
+    achPlayerPrefsName: FindFreeze
+  - itemName: Chest
+    achPlayerPrefsName: FindChest

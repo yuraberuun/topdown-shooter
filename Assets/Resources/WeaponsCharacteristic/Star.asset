@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bfe13283b14ff40aacbbda3716c2f2, type: 3}
+  m_Name: Star
+  m_EditorClassIdentifier: 
+  _levelsData:
+  - _minDamage: 7
+    _maxDamage: 13
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 400
+    _lifeTime: 2.7
+    _attackArea: 1
+    _bulletCount: 1
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.25
+    _freezeTime: 0
+  - _minDamage: 12
+    _maxDamage: 18
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 520
+    _lifeTime: 2.7
+    _attackArea: 1
+    _bulletCount: 1
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 17
+    _maxDamage: 23
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 520
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 1
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 17
+    _maxDamage: 23
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 520
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.05
+    _freezeTime: 0
+  - _minDamage: 22
+    _maxDamage: 28
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 640
+    _lifeTime: 3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.05
+    _freezeTime: 0
+  - _minDamage: 27
+    _maxDamage: 33
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 640
+    _lifeTime: 3.3
+    _attackArea: 1
+    _bulletCount: 2
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.05
+    _freezeTime: 0
+  - _minDamage: 27
+    _maxDamage: 33
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 640
+    _lifeTime: 3.3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.05
+    _freezeTime: 0
+  - _minDamage: 32
+    _maxDamage: 38
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 760
+    _lifeTime: 3.3
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0.3
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0.05
+    _freezeTime: 0

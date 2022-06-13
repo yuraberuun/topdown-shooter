@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa9620106ad88742b670a9036e55e98, type: 3}
+  m_Name: AchievementsUI
+  m_EditorClassIdentifier: 
+  achievements:
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: ab54bbbf22ea9dc4c82c673fb0b3e136, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Get Sword to level 8.
+    addition: 'Unlock: Fighter.'
+    playerPrefsName: FighterHide
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: d09256f325361b7439e3bb34e96394db, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Get Knife to level 8.
+    addition: 'Unlock: Assasin.'
+    playerPrefsName: AssasinHide
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 7bce2e4d90d4f034f843a60d265ccb49, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 5 minutes with any hero.
+    addition: 'Unlock: Holy Water.'
+    playerPrefsName: openHolyWater
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: fd52cf9690c58a84e8a7ab6b6b1c92c5, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Defeat a total of 5000 enemies.
+    addition: 'Unlock: Star.'
+    playerPrefsName: openStar
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 1d555b886fe5d894da2282001571d53c, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 10 minutes with Siege.
+    addition: 'Unlock: Lightning.'
+    playerPrefsName: openLightning
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 508fe3b5a2b7b3b46888fd6dc7b58d9b, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 10 minutes with Spellcaster.
+    addition: 'Unlock: Shield.'
+    playerPrefsName: openShield
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: c485a6298397fb344bc980e62c3188b8, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 15 minutes with any hero.
+    addition: 'Unlock: Bible.'
+    playerPrefsName: openBible
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 3b5ae15c98fff22488e21699e1e5025e, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 15 minutes with Spellcaster.
+    addition: 'Unlock: Fireball.'
+    playerPrefsName: openFireball
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: b64224ca52ab85e44aff445049973f9c, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 20 minutes with any hero.
+    addition: 'Unlock: Bone.'
+    playerPrefsName: openBone
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 2fda36dd2cbb5cf408be4cb9db85bfc1, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Survive 20 minutes with Asassin.
+    addition: 'Unlock: Boomerang.'
+    playerPrefsName: openBoomerang
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: f8faeffdf7fc61f4a9ebf24ac3c6ce49, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Reached level 5.
+    addition: 'Unlock: Movement Speed.'
+    playerPrefsName: openSpeed
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 0dddb6893f25d394da9cb3d9b72354a0, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Reached level 10.
+    addition: 'Unlock: MegaBrain.'
+    playerPrefsName: openMegaBrain
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 786b584ff95a6384eb81403eb535ba98, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Find clover.
+    addition: 'Unlock: Luck Up.'
+    playerPrefsName: FindClover
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: ddba7543bdd99e846906f173850e0304, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Find magnit.
+    addition: 'Unlock: Magnet Zone.'
+    playerPrefsName: FindMagnet
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 26f695ff4bb17ac4b942784975ebf950, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Reached level 25.
+    addition: 'Unlock: Range.'
+    playerPrefsName: openRange
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0
+  - name: Obtained
+    sprite: {fileID: 21300000, guid: 15c2fc5129ba5ff49a5664fda8809ed4, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Reached level 30.
+    addition: 'Unlock: WeaponDuration.'
+    playerPrefsName: openWeaponDuration
+    achPlayerPrefsName: 
+    open: 0
+    costs: 
+    upgradeLevel: 0
+    upgradeLevelMax: 0

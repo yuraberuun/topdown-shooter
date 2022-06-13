@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bfe13283b14ff40aacbbda3716c2f2, type: 3}
+  m_Name: FireBall
+  m_EditorClassIdentifier: 
+  _levelsData:
+  - _minDamage: 9
+    _maxDamage: 17
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 300
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 19
+    _maxDamage: 27
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 300
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 29
+    _maxDamage: 37
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 360
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 39
+    _maxDamage: 47
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 360
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 49
+    _maxDamage: 57
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 420
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 59
+    _maxDamage: 67
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 420
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 69
+    _maxDamage: 77
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 480
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0
+  - _minDamage: 79
+    _maxDamage: 87
+    _hitForce: 10
+    _cooldown: 3
+    _speed: 480
+    _lifeTime: 5
+    _attackArea: 1
+    _bulletCount: 3
+    _spawnOffset: 0
+    _passesThroughtEnemy: 0
+    _delayBetweenShots: 0
+    _freezeTime: 0

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4517994090492090153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4517994090492090167}
+  - component: {fileID: 4517994090492090166}
+  m_Layer: 0
+  m_Name: DropController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4517994090492090167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4517994090492090153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 452.51718, y: 286.0972, z: -143.99405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4517994090492090166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4517994090492090153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adb0cbebc0ab74fb5dbc562854ebfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _xpMagnetSpeed: 15
+  _parent: {fileID: 0}
+  _xp3Drop:
+    chance: 55
+    prefab: {fileID: 5244752461735422332, guid: 2cceb372ba16cb547bdfc2c98b6e0149, type: 3}
+  _chestDrop:
+    chance: 35
+    prefab: {fileID: 1436371200492849374, guid: 072ae8c1d73393b47af7ef351e517f1c, type: 3}
+  xpPrefabs:
+  - chance: 25
+    prefab: {fileID: 0}
+  - chance: 50
+    prefab: {fileID: 5244752461735422332, guid: 7858c6cb6298c72458303af8d27162e6, type: 3}
+  - chance: 5
+    prefab: {fileID: 5244752461735422332, guid: cb9b0668c9861d04c949689f34b7bb3e, type: 3}
+  lanternDrop:
+  - chance: 15
+    prefab: {fileID: 0}
+  - chance: 60
+    prefab: {fileID: 8209267715130556437, guid: 3fe60ac2ae064eb47ad73e311ec8d6ef, type: 3}
+  - chance: 15
+    prefab: {fileID: 8209267715130556437, guid: 57d4183e87dcab142901101f20bb09a4, type: 3}
+  - chance: 2
+    prefab: {fileID: 8209267715130556437, guid: d4b45f488d39f314bbc011acbb55cd64, type: 3}
+  - chance: 2
+    prefab: {fileID: 1848433342604165043, guid: 56bb0e0b174452849a50e6bb98fc3730, type: 3}
+  - chance: 10
+    prefab: {fileID: 4741720631407439179, guid: 75845495cfcbf134ea61be7d4d3f537c, type: 3}
+  - chance: 15
+    prefab: {fileID: 3648185177996587433, guid: af78656fe10d8aa49bbe8a082acc8e6e, type: 3}
+  - chance: 5
+    prefab: {fileID: 3469636669596649475, guid: 4f5e27946379d844582cfc0b89abdefc, type: 3}
+  - chance: 5
+    prefab: {fileID: 5041470027182179637, guid: 63d9a60f50a41e841b094387daa78096, type: 3}

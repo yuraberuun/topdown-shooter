@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdae5b182445a5e49b16020df3432318, type: 3}
+  m_Name: PowerUpList
+  m_EditorClassIdentifier: 
+  powerUps:
+  - name: Armor
+    sprite: {fileID: 21300000, guid: bf43ea7b101124049b4eed719832aeb3, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost hero armor.
+    addition: Armor
+    playerPrefsName: ShopHeroArmor
+    achPlayerPrefsName: 
+    open: 0
+    costs: c800000090010000bc020000e8030000dc050000
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+  - name: More Bullets
+    sprite: {fileID: 21300000, guid: ba1c581d2dc658a44bd3934445d97cec, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost weapon bullets amount.
+    addition: 
+    playerPrefsName: ShopWeaponBulletCount
+    achPlayerPrefsName: 
+    open: 0
+    costs: 20030000dc050000b80b000088130000581b0000
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+  - name: Cooldown
+    sprite: {fileID: 21300000, guid: 38e0aa169c670a9439ce02f9de325885, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Reduce weapon cooldown.
+    addition: 
+    playerPrefsName: ShopWeaponCooldown
+    achPlayerPrefsName: 
+    open: 0
+    costs: e8030000c4090000
+    upgradeLevel: 0
+    upgradeLevelMax: 2
+  - name: Damage Buff
+    sprite: {fileID: 21300000, guid: f9aa5fe43d47e8b4db5ac99b4fcc8316, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost weapon damage.
+    addition: 
+    playerPrefsName: ShopWeaponDamage
+    achPlayerPrefsName: 
+    open: 0
+    costs: 2c010000bc020000e803000078050000d0070000
+    upgradeLevel: 0
+    upgradeLevelMax: 5
+  - name: Weapon Duration
+    sprite: {fileID: 21300000, guid: 15c2fc5129ba5ff49a5664fda8809ed4, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost weapon effect duration.
+    addition: 
+    playerPrefsName: ShopWeaponDuration
+    achPlayerPrefsName: 
+    open: 0
+    costs: dc050000b80b0000
+    upgradeLevel: 0
+    upgradeLevelMax: 2
+  - name: Lucky Up
+    sprite: {fileID: 21300000, guid: a0ea43e5b3753ea4a83523888c01557a, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost luck up.
+    addition: 
+    playerPrefsName: ShopHeroLucky
+    achPlayerPrefsName: 
+    open: 0
+    costs: bc020000b004000040060000
+    upgradeLevel: 0
+    upgradeLevelMax: 3
+  - name: Magnet Zone
+    sprite: {fileID: 21300000, guid: ddba7543bdd99e846906f173850e0304, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Increase magnet zone.
+    addition: 
+    playerPrefsName: ShopHeroMagnet
+    achPlayerPrefsName: 
+    open: 0
+    costs: 840300000e060000
+    upgradeLevel: 0
+    upgradeLevelMax: 2
+  - name: Weapon Area/Range
+    sprite: {fileID: 21300000, guid: 26f695ff4bb17ac4b942784975ebf950, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost weapon range.
+    addition: 
+    playerPrefsName: BattleWeaponArea
+    achPlayerPrefsName: 
+    open: 0
+    costs: 6207000092090000
+    upgradeLevel: 0
+    upgradeLevelMax: 2
+  - name: Hero Speed
+    sprite: {fileID: 21300000, guid: f8faeffdf7fc61f4a9ebf24ac3c6ce49, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost hero max HP.
+    addition: 
+    playerPrefsName: ShopHeroSpeed
+    achPlayerPrefsName: 
+    open: 0
+    costs: 9001000052030000
+    upgradeLevel: 0
+    upgradeLevelMax: 2
+  - name: Max HP
+    sprite: {fileID: 21300000, guid: 8583271710e05774d8e3e54d5d9f89c8, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost hero max HP.
+    addition: 
+    playerPrefsName: ShopHeroMaxHP
+    achPlayerPrefsName: 
+    open: 0
+    costs: f40100008403000046050000
+    upgradeLevel: 0
+    upgradeLevelMax: 3
+  - name: XP Growth
+    sprite: {fileID: 21300000, guid: 0dddb6893f25d394da9cb3d9b72354a0, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Boost taken XP.
+    addition: 
+    playerPrefsName: ShopHeroGrowth
+    achPlayerPrefsName: 
+    open: 0
+    costs: f4010000e8030000d0070000b80b0000
+    upgradeLevel: 0
+    upgradeLevelMax: 4
+  - name: Bullet Speed Up
+    sprite: {fileID: 21300000, guid: 28ac85bd883c1ae48b7ca18341cc12ec, type: 3}
+    heroWeaponSprite: {fileID: 0}
+    heroWeaponName: 
+    description: Bullet Speed Up
+    addition: 
+    playerPrefsName: ShopWeaponSpeed
+    achPlayerPrefsName: 
+    open: 0
+    costs: c4090000
+    upgradeLevel: 0
+    upgradeLevelMax: 1

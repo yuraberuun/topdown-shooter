@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7400326112506587555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3119263880135889748, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 74e19faa7b896a44ca8460fc183e3b17, type: 2}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: _liveTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: initialSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: toDestroyEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: _enemyBuffsData
+      value: 
+      objectReference: {fileID: 11400000, guid: 00f301b1b8ecd5747af53c50dd683a53, type: 2}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: initialMaxHealth
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: hitForceCoeficient
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: _timeToChangeDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6551967858820962323}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestroyEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemyAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: onExitFromScreen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183153, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183155, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_Name
+      value: FlowerEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047785233183156, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8cd896bdbec4e774f942edd49a0dfaf9, type: 3}
+    - target: {fileID: 4350047785233183156, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+--- !u!114 &6551967858820962323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
+  m_PrefabInstance: {fileID: 7400326112506587555}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a974d4ea5b48454ea03c7266a757b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

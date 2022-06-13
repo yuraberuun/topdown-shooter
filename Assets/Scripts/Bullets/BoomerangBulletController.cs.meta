@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/Bullets/BoomerangBulletController.cs.meta
+guid: 84cd93de9e9cda641bb47bcc18e30c54
+=======
+guid: 0ea31d9de83b5d442ba0ddc807775878
+>>>>>>> pasha:Assets/Scripts/Bullets/BulletInfo.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
