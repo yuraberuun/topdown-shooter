@@ -27,12 +27,13 @@ public class BibleWeapon : WeaponController
     private void MoveToOrbit()
     {
         for (int i = 0; i < _rotateObjects.Count; i++)
-            _rotateObjects[i].position = Vector2.MoveTowards(_rotateObjects[i].position, _bulletPositions[i], speed / 10 * Time.deltaTime);
+            _rotateObjects[i].position = Vector2.MoveTowards(_rotateObjects[i].position, _bulletPositions[i], speed / 3f * Time.deltaTime);
 
         if(_rotateObjects[0].position == _bulletPositions[0])
         {
             _moveToOrbit = false;
             _rotate = true;
+            
         } 
     }
 
@@ -73,5 +74,16 @@ public class BibleWeapon : WeaponController
     {
         yield return new WaitForSeconds(0.0f);
         Shoot();
+    }
+
+    private void OnDisable()
+    {
+        foreach (var i in _rotateObjects)
+            i.GetComponent<BulletController>().Magic();
+
+        _rotateObjects.Clear();
+        _bulletPositions.Clear();
+        _rotate = false;
+        cooldown = delayBetweenAttacks;
     }
 }

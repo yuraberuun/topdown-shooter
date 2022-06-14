@@ -97,13 +97,13 @@ MonoBehaviour:
     _passesThroughtEnemy: 0
     _delayBetweenShots: 0
     _freezeTime: 0
-  - _minDamage: 29
-    _maxDamage: 34
+  - _minDamage: 22
+    _maxDamage: 25
     _hitForce: 10
     _cooldown: 6
-    _speed: 160
+    _speed: 180
     _lifeTime: 4.65
-    _attackArea: 1.5
+    _attackArea: 1.3
     _bulletCount: 4
     _spawnOffset: 0
     _passesThroughtEnemy: 0

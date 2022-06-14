@@ -9,6 +9,8 @@ public class HUDController : MonoBehaviour
 {
     private static HUDController instance;
 
+    [SerializeField] private AdditionalController _aC;
+
     public static HUDController Instance => instance;
 
     [SerializeField]
@@ -35,6 +37,10 @@ public class HUDController : MonoBehaviour
     [SerializeField] private Transform weaponContainer;
     [SerializeField] private GameObject HUDCellPrefab;
 
+    private GameObject magic;
+    private GameObject bible;
+    private GameObject star;
+
     [SerializeField]
     private UpgradeList upgrades;
 
@@ -56,13 +62,40 @@ public class HUDController : MonoBehaviour
     private void Update()
     {
         UpdateTimer();
+
+       if (Input.GetKeyDown(KeyCode.Alpha1))
+       {
+                magic.SetActive(true);
+                bible.SetActive(false);
+                star.SetActive(false);
+       }
+
+       if (Input.GetKeyDown(KeyCode.Alpha2))
+       {
+                magic.SetActive(false);
+                bible.SetActive(true);
+                star.SetActive(false);
+       }
+
+       if (Input.GetKeyDown(KeyCode.Alpha3))
+       {
+                magic.SetActive(false);
+                bible.SetActive(false);
+                star.SetActive(true);
+       }
     }
 
     public void UpdateXPBar(float value) => xpImage.fillAmount = value;
 
     public void AddStartWeapon(CellInfo info)
     {
-        AddUpgradeItem(upgrades.GetUpgradeFromCell(info));
+        AddUpgradeItem(upgrades.weapons[7]);
+        AddUpgradeItem(upgrades.weapons[1]);
+        AddUpgradeItem(upgrades.weapons[9]);
+
+        star.gameObject.SetActive(false);
+        bible.gameObject.SetActive(false);
+        _aC.SomeMagic();
     }
 
     public void AddUpgradeItem(UpgradeInfo info)
@@ -72,7 +105,16 @@ public class HUDController : MonoBehaviour
             HUDCellPrefab.transform.GetChild(0).GetComponent<Image>().sprite = info.sprite;
 
             if(info.type == UpgradeType.Weapon)
-                Instantiate(HUDCellPrefab, weaponContainer);
+            {
+                if (!magic)
+                    magic = Instantiate(HUDCellPrefab, weaponContainer);
+
+                else if (!bible)
+                bible = Instantiate(HUDCellPrefab, weaponContainer);
+
+                else if (!star)
+                star = Instantiate(HUDCellPrefab, weaponContainer);
+            }
             else if (info.type == UpgradeType.Buff)
                 Instantiate(HUDCellPrefab, buffsContainer);
 
@@ -80,6 +122,7 @@ public class HUDController : MonoBehaviour
 
         Inventory.Instance.AddItem(info);
     }
+
     public void UpdateLevel(int value)
     {
         levelText.text = $"Lvl {value}";

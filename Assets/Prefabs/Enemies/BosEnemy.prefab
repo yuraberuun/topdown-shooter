@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
       propertyPath: initialSpeed
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
       propertyPath: toDestroyEnemy
@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
       propertyPath: initialMaxHealth
-      value: 350
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4350047785233183152, guid: 453e50071b1cc4b4c86cbe68da4bef05, type: 3}
       propertyPath: hitForceCoeficient

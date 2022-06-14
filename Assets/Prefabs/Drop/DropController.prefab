@@ -47,34 +47,34 @@ MonoBehaviour:
   _xpMagnetSpeed: 15
   _parent: {fileID: 0}
   _xp3Drop:
-    chance: 55
+    chance: 0
     prefab: {fileID: 5244752461735422332, guid: 2cceb372ba16cb547bdfc2c98b6e0149, type: 3}
   _chestDrop:
-    chance: 35
+    chance: 0
     prefab: {fileID: 1436371200492849374, guid: 072ae8c1d73393b47af7ef351e517f1c, type: 3}
   xpPrefabs:
-  - chance: 25
+  - chance: 0
     prefab: {fileID: 0}
-  - chance: 50
+  - chance: 0
     prefab: {fileID: 5244752461735422332, guid: 7858c6cb6298c72458303af8d27162e6, type: 3}
-  - chance: 5
+  - chance: 0
     prefab: {fileID: 5244752461735422332, guid: cb9b0668c9861d04c949689f34b7bb3e, type: 3}
   lanternDrop:
-  - chance: 15
+  - chance: 0
     prefab: {fileID: 0}
-  - chance: 60
+  - chance: 0
     prefab: {fileID: 8209267715130556437, guid: 3fe60ac2ae064eb47ad73e311ec8d6ef, type: 3}
-  - chance: 15
+  - chance: 0
     prefab: {fileID: 8209267715130556437, guid: 57d4183e87dcab142901101f20bb09a4, type: 3}
-  - chance: 2
+  - chance: 0
     prefab: {fileID: 8209267715130556437, guid: d4b45f488d39f314bbc011acbb55cd64, type: 3}
-  - chance: 2
+  - chance: 0
     prefab: {fileID: 1848433342604165043, guid: 56bb0e0b174452849a50e6bb98fc3730, type: 3}
-  - chance: 10
+  - chance: 0
     prefab: {fileID: 4741720631407439179, guid: 75845495cfcbf134ea61be7d4d3f537c, type: 3}
-  - chance: 15
+  - chance: 0
     prefab: {fileID: 3648185177996587433, guid: af78656fe10d8aa49bbe8a082acc8e6e, type: 3}
-  - chance: 5
+  - chance: 0
     prefab: {fileID: 3469636669596649475, guid: 4f5e27946379d844582cfc0b89abdefc, type: 3}
-  - chance: 5
+  - chance: 0
     prefab: {fileID: 5041470027182179637, guid: 63d9a60f50a41e841b094387daa78096, type: 3}

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialSpeed: 2
-  initialMaxHealth: 5
+  initialMaxHealth: 75
   _takenDamageText: {fileID: 8075943090928248905, guid: 61d1f3b1cddf43643967dfc14bff1f56, type: 3}
   _playerTransform: {fileID: 0}
   _attackCooldown: 0.1

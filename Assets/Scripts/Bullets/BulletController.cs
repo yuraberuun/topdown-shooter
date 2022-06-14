@@ -78,4 +78,9 @@ public class BulletController : MonoBehaviour
     public float GetHitForce() => _bulletInfo.HitForce;
 
     public float GetDelayBetweenAttacks() => _bulletInfo.DelayBetweenAttacks;
+
+    public void Magic()
+    {
+        _bulletInfo.CollidedAction.Invoke(gameObject);
+    }
 }

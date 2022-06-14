@@ -98,9 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a974d4ea5b48454ea03c7266a757b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: 2
-  initialMaxHealth: 5
-  _enemyBuffsData: {fileID: 11400000, guid: 00f301b1b8ecd5747af53c50dd683a53, type: 2}
+  initialSpeed: 3
+  initialMaxHealth: 50
   _takenDamageText: {fileID: 8075943090928248905, guid: 61d1f3b1cddf43643967dfc14bff1f56, type: 3}
   _playerTransform: {fileID: 0}
   _attackCooldown: 0.1

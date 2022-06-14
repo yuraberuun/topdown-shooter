@@ -49,7 +49,9 @@ public class StarBulletController : MonoBehaviour
     private void ChangeDirection(bool changeXAxis = true)
     {
         gameObject.GetComponent<Rigidbody2D>().AddForce(_direction * -_speed);
+
         _direction = changeXAxis ? new Vector2(-_direction.x, _direction.y) : new Vector2(_direction.x, -_direction.y);
+
         gameObject.GetComponent<Rigidbody2D>().AddForce(_direction * _speed);
     }
 
@@ -61,16 +63,6 @@ public class StarBulletController : MonoBehaviour
 
         StartCoroutine(ShowTrail(lifeTime));
     }
-
-
-
-
-
-
-
-
-
-
 
     private IEnumerator ShowTrail(float delay)
     {

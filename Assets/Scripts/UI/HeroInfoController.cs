@@ -124,4 +124,8 @@ public class HeroInfoController : MonoBehaviour
 
         Debug.Log("Press First Time (Confirm)");
     }
+     public void StartGame()
+    {
+        GUIController.instance.StartGame(currentInfo);
+    }
 }

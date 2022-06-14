@@ -63,7 +63,7 @@ public class MenuController : MonoBehaviour
 
     public void SetPauseMenu()
     {
-        powerUpBtn.SetActive(false);
+        //powerUpBtn.SetActive(false);
         subMenu.MenuInPause();
     }
 

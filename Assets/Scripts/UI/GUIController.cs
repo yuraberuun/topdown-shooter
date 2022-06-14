@@ -61,13 +61,12 @@ public class GUIController : MonoBehaviour
 
     public void StartGame(CellInfo hero)
     {
-        currentHero = hero;
         OpenOrCloseMenu();
         gamest.status = GameState.Play;
         HUDcontrl.ShowKilledEnemies();
         HUDcontrl.AddStartWeapon(hero);
-        player.SetSprite(hero.sprite);
-        player.SetAnimatorController(_heroesAnimators.Find(x => x.name == hero.name).animator);
+        //player.SetSprite(hero.sprite);
+        //player.SetAnimatorController(_heroesAnimators.Find(x => x.name == hero.name).animator);
         playerHealthBar.SetActive(true);
 
         SoundManager.Instance.MakeSound(SoundType.StartGame);

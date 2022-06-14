@@ -6,19 +6,19 @@ using TMPro;
 public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _survivedTimeText;
-    [SerializeField] private TextMeshProUGUI _earnedGoldText;
+    //[SerializeField] private TextMeshProUGUI _earnedGoldText;
     [SerializeField] private TextMeshProUGUI _killedEnemiesText;
-    [SerializeField] private TextMeshProUGUI _reachedLevelText;
+    //[SerializeField] private TextMeshProUGUI _reachedLevelText;
 
     private void Start()
     {
         ResultInfo info = HUDController.Instance.GetResults();
         _survivedTimeText.text = info.timeText;
-        _earnedGoldText.text = info.gold.ToString();
+        //_earnedGoldText.text = info.gold.ToString();
         _killedEnemiesText.text = info.killedEnemies.ToString();
-        _reachedLevelText.text = info.reachedLevel.ToString();
+        //_reachedLevelText.text = info.reachedLevel.ToString();
         PlayerPrefs.SetInt("TotalKills", PlayerPrefs.GetInt("TotalKills") + info.killedEnemies);
-        AchievementsManager.Instance.FindAchievements(info, GUIController.instance.currentHero.name);
+        //AchievementsManager.Instance.FindAchievements(info, GUIController.instance.currentHero.name);
 
     }
 

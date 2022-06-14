@@ -145,7 +145,7 @@ public class Inventory : SingletonComponent<Inventory>
         if (item.type == UpgradeType.Weapon)
         {
             heroWeapons.Find(x => x.name == item.name).weapon.SetActive(true);
-            item.upgradeLevel = 1;
+            item.upgradeLevel = 8;
             _weapons.Add(item);
         }
     }

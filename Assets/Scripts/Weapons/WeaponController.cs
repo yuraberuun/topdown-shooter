@@ -54,7 +54,11 @@ public class WeaponController : MonoBehaviour
         InvokeRepeating("ShootsWithDelay", startDelay, cooldown);
     }
 
-    virtual protected void ShootsWithDelay() => StartCoroutine(ShootsWithDelayCorutine());
+    virtual protected void ShootsWithDelay()
+    {
+        if (gameObject.activeInHierarchy)
+            StartCoroutine(ShootsWithDelayCorutine());
+    }
     
     virtual protected IEnumerator ShootsWithDelayCorutine()
     {

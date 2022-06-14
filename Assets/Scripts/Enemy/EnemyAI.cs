@@ -115,8 +115,8 @@ public class EnemyAI : CharacterController
         var pos = objTransform.position;
         if (CompareTag("Lantern"))
             DropController.Instance.SpawnDropToLantern(pos);
-        else if(_isSpecial)
-            DropController.Instance.SpawnDropSpecialEnemy(pos);
+        // else if(_isSpecial)
+        //     DropController.Instance.SpawnDropSpecialEnemy(pos);
         else
             DropController.Instance.SpawnXP(pos);
     }
